@@ -1,0 +1,26 @@
+{
+  "name": "cli-word-guess",
+  "version": "1.0.0",
+  "description": "Home work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmolla/cli-word-guess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmolla/cli-word-guess/issues"
+  },
+  "homepage": "https://github.com/tmolla/cli-word-guess#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "oxford-dictionary": "^1.4.1",
+    "oxford-dictionary-api": "^1.0.1",
+    "random-words": "^1.1.0"
+  }
+}
