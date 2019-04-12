@@ -2,16 +2,14 @@
 Randomly selects a word and uses the Word constructor to store it
 Prompts the user for each guess and keeps track of the user's remaining guesses
 */
-var config = {
-    app_id : "e506fb9f",
-    app_key : "781338ab5c86990b3f2ab9f4ddb5c30d",
-    source_lang :  "en"
-}
+
+require("dotenv").config()
+var keys = require("./keys")
 var word = require("./word")
 var inquirer = require('inquirer');
 var Dictionary = require("oxford-dictionary");
 var randomWords = require("random-words")
-var dict = new Dictionary(config);
+var dict = new Dictionary(keys.oxford);
 var myWord = ""
 var randomWord = ""
 
@@ -35,7 +33,7 @@ function playGame(){
         lookup.then(function(res){
             //var hint = res.results[0].lexicalEntries[0].entries[0].senses[0].definitions.join();
             //Display hint
-            console.log("Hint, word meaning - " + res.results[0].lexicalEntries[0].entries[0].senses[0].definitions.join() + "\n")
+            console.log("\nHint, word meaning - " + res.results[0].lexicalEntries[0].entries[0].senses[0].definitions.join() + "\n")
             promptUser();
         }, function(err){
             console.log(err)

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tmolla/cli-word-guess#readme",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "inquirer": "^6.2.2",
     "oxford-dictionary": "^1.4.1",
     "oxford-dictionary-api": "^1.0.1",
